@@ -30,9 +30,7 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright tests
-      run: | 
-        npx playwright test --list
-        npx playwright test
+      run: npx playwright test
     
     - name: Stop server
       run: pkill -f "npm run dev" || true    
